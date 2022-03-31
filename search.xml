@@ -6,8 +6,8 @@
     <content><![CDATA[<p>文章目录：<a href="https://seth-blog.ml/archives/">https://seth-blog.ml/archives/</a></p>
 ]]></content>
       <tags>
-        <tag>目录</tag>
         <tag>公告</tag>
+        <tag>目录</tag>
       </tags>
   </entry>
   <entry>
@@ -59,8 +59,8 @@
 <p>PS：别问我为什么这次图床够用了，因为我自己搭建了一个</p>
 ]]></content>
       <tags>
-        <tag>源码博客</tag>
         <tag>发布会</tag>
+        <tag>源码博客</tag>
       </tags>
   </entry>
   <entry>
@@ -532,9 +532,9 @@
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <tags>
         <tag>公告</tag>
-        <tag>发布会</tag>
         <tag>博客</tag>
         <tag>源码</tag>
+        <tag>发布会</tag>
       </tags>
   </entry>
   <entry>
