@@ -330,6 +330,13 @@
   </url>
   
   <url>
+    <loc>https://xysn.ml/tags/%E8%A8%80%E5%B0%84%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2022-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://xysn.ml/tags/%E6%96%87%E7%AB%A0%E6%94%B9%E7%BC%96/</loc>
     <lastmod>2022-04-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -338,13 +345,6 @@
   
   <url>
     <loc>https://xysn.ml/tags/%E8%B6%A3%E6%96%87/</loc>
-    <lastmod>2022-04-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xysn.ml/tags/%E8%A8%80%E5%B0%84%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2022-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -379,7 +379,7 @@
   </url>
   
   <url>
-    <loc>https://xysn.ml/tags/%E7%AE%80%E4%BB%8B/</loc>
+    <loc>https://xysn.ml/tags/%E6%AD%8C%E6%9B%B2/</loc>
     <lastmod>2022-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -400,7 +400,7 @@
   </url>
   
   <url>
-    <loc>https://xysn.ml/tags/%E6%AD%8C%E6%9B%B2/</loc>
+    <loc>https://xysn.ml/tags/%E7%AE%80%E4%BB%8B/</loc>
     <lastmod>2022-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
