@@ -115,7 +115,7 @@ daovoice('update');
         <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
         <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">23</span></a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">22</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">23</span></a></li>
         <li class="menu-item menu-item-links"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>朋友圈</a></li>
         <li class="menu-item menu-item-beep"><a href="/bb" rel="section"><i class="fa fa-solid fa-comment-dots fa-fw"></i>哔哔</a></li>
         <li class="menu-item menu-item-guestbook"><a href="/guestbook/" rel="section"><i class="fa fa-thin fa-comments fa-fw"></i>留言</a></li>
@@ -230,7 +230,7 @@ daovoice('update');
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-count">23</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -520,6 +520,107 @@ daovoice('update');
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://xysn.ml/posts/3200579984/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/picture.jpeg">
+      <meta itemprop="name" content="Seth">
+      <meta itemprop="description" content="Seth，一个普通的中国人，没错，这里就是他的博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Seth's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/posts/3200579984/" class="post-title-link" itemprop="url">谢言射教你用hexo+github搭建博客（3.主题更换）</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-05-02 18:23:57 / 修改时间：21:12:58" itemprop="dateCreated datePublished" datetime="2022-05-02T18:23:57+08:00">2022-05-02</time>
+    </span>
+
+  
+  
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>606</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+
+			
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>基于<a target="_blank" rel="noopener" href="https://xys-blog.cf/posts/3031762228/">第二章的准备工作</a>，现在更换博客主题</p>
+<h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><p>当然，您可以保留hexo的默认主题，也可以跟着本教程更换</p>
+<h3 id="选择主题"><a href="#选择主题" class="headerlink" title="选择主题"></a>选择主题</h3><p>到 <a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a> 中选择一款您喜欢的主题，并点击它的名字进入它的github地址<br><img src="https://cdn.jsdelivr.net/gh/xieyanshe666/PicGoCDN/img/3.1.png"></p>
+<h3 id="更换主题-1"><a href="#更换主题-1" class="headerlink" title="更换主题"></a>更换主题</h3><p>这里以butterfly主题为例<br>划到自述文件的开头<br>然后复制红框中的代码<br>在git中先打开博客（cd &#x2F;f&#x2F;myblog），然后把刚刚复制的东西黏贴到git中运行<br><img src="https://cdn.jsdelivr.net/gh/xieyanshe666/PicGoCDN/img/3.3.png"></p>
+<p>注：butterfly等主题还需在git中运行</p>
+<p>  npm install hexo-renderer-pug hexo-renderer-stylus<br>才行<br>接着更改博客根目录的_config.yml文件<br>把大约为第100行的theme配置改为</p>
+<p>  theme: 您刚刚更改的主题的名称<br>比如我的</p>
+<p>  theme: butterfly<br><img src="https://cdn.jsdelivr.net/gh/xieyanshe666/PicGoCDN/img/3.4.png"></p>
+<p>再在git中运行</p>
+<p>  hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>即可<br>等待一会，在浏览器中打开自己的博客，就能看见变化了<br><img src="https://cdn.jsdelivr.net/gh/xieyanshe666/PicGoCDN/img/3.5.png"></p>
+<p>博主有关hexo博客搭建的文章已经写完了<br>但后续会推出hexo博客美化系列的文章<br>敬请期待……</p>
+<p>感谢您的阅读！！！<br>（如有错请联系博主：<a href="mailto:&#120;&#121;&#x73;&#x77;&#x79;&#121;&#49;&#x40;&#49;&#54;&#51;&#x2e;&#x63;&#111;&#x6d;">&#120;&#121;&#x73;&#x77;&#x79;&#121;&#49;&#x40;&#49;&#54;&#51;&#x2e;&#x63;&#111;&#x6d;</a>或在评论区留言）</p>
+<center>---------END--------</center>
+      
+    </div>
+
+    
+    
+    
+      
+
+	
+	<div>
+		
+	</div>
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://xysn.ml/posts/323266332/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -545,7 +646,7 @@ daovoice('update');
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2022-05-02 16:47:49 / 修改时间：18:18:41" itemprop="dateCreated datePublished" datetime="2022-05-02T16:47:49+08:00">2022-05-02</time>
+      <time title="创建时间：2022-05-02 16:47:49 / 修改时间：20:57:56" itemprop="dateCreated datePublished" datetime="2022-05-02T16:47:49+08:00">2022-05-02</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1228,104 +1329,6 @@ daovoice('update');
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://xysn.ml/posts/4093402486/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/picture.jpeg">
-      <meta itemprop="name" content="Seth">
-      <meta itemprop="description" content="Seth，一个普通的中国人，没错，这里就是他的博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Seth's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/posts/4093402486/" class="post-title-link" itemprop="url">我的心愿（六下第四单元习作）</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2022-04-04 19:39:35 / 修改时间：21:08:57" itemprop="dateCreated datePublished" datetime="2022-04-04T19:39:35+08:00">2022-04-04</time>
-    </span>
-
-  
-  
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>387</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-
-			
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fupload-images.jianshu.io%2Fupload_images%2F17030804-dad8be302cf9035b.png&refer=http%3A%2F%2Fupload-images.jianshu.io&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1651667288&t=00c778c612971c237c83419b270f55e1" alt="其实,有些愿望不在于实现,想想也是美的(来源百度,侵删)"></p>
-<center>《我的心愿》</center>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/4093402486/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      
-
-	
-	<div>
-		
-	</div>
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
     <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
@@ -1351,14 +1354,14 @@ daovoice('update');
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">30k</span>
+    <span title="站点总字数">31k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">27 分钟</span>
+    <span title="站点阅读时长">28 分钟</span>
   </span>
 </div>
 
@@ -1368,7 +1371,7 @@ daovoice('update');
 
 <!--<div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共17.2k字</span>
+  <span class="post-count">博客全站共17.5k字</span>
 </div>-->
 
 <div class="powered-by">

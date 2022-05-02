@@ -47,31 +47,34 @@ daovoice('update');
  </script>
 
 
-<meta name="description" content="1，map简介map是STL的一个关联容器，它提供一对一的hash。">
+<meta name="description" content="前言基于第二章的准备工作，现在更换博客主题 更换主题当然，您可以保留hexo的默认主题，也可以跟着本教程更换 选择主题到 https:&#x2F;&#x2F;hexo.io&#x2F;themes&#x2F; 中选择一款您喜欢的主题，并点击它的名字进入它的github地址 更换主题这里以butterfly主题为例划到自述文件的开头然后复制红框中的代码在git中先打开博客（cd &#x2F;f&#x2F;myblog），然后把刚刚复制的东">
 <meta property="og:type" content="article">
-<meta property="og:title" content="c++ map用法总结">
-<meta property="og:url" content="https://xysn.ml/posts/297322009/index.html">
+<meta property="og:title" content="谢言射教你用hexo+github搭建博客（3.主题更换）">
+<meta property="og:url" content="https://xysn.ml/posts/3200579984/index.html">
 <meta property="og:site_name" content="Seth&#39;s Blog">
-<meta property="og:description" content="1，map简介map是STL的一个关联容器，它提供一对一的hash。">
+<meta property="og:description" content="前言基于第二章的准备工作，现在更换博客主题 更换主题当然，您可以保留hexo的默认主题，也可以跟着本教程更换 选择主题到 https:&#x2F;&#x2F;hexo.io&#x2F;themes&#x2F; 中选择一款您喜欢的主题，并点击它的名字进入它的github地址 更换主题这里以butterfly主题为例划到自述文件的开头然后复制红框中的代码在git中先打开博客（cd &#x2F;f&#x2F;myblog），然后把刚刚复制的东">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/img_convert/ab94f358cc379299731b9aaa4814fd47.png">
-<meta property="article:published_time" content="2022-04-13T12:59:36.000Z">
-<meta property="article:modified_time" content="2022-04-13T13:00:52.639Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/xieyanshe666/PicGoCDN/img/3.1.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/xieyanshe666/PicGoCDN/img/3.3.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/xieyanshe666/PicGoCDN/img/3.4.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/xieyanshe666/PicGoCDN/img/3.5.png">
+<meta property="article:published_time" content="2022-05-02T10:23:57.000Z">
+<meta property="article:modified_time" content="2022-05-02T13:12:58.152Z">
 <meta property="article:author" content="Seth">
-<meta property="article:tag" content="c++">
-<meta property="article:tag" content="语法">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="github">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/img_convert/ab94f358cc379299731b9aaa4814fd47.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/xieyanshe666/PicGoCDN/img/3.1.png">
 
 
-<link rel="canonical" href="https://xysn.ml/posts/297322009/">
+<link rel="canonical" href="https://xysn.ml/posts/3200579984/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://xysn.ml/posts/297322009/","path":"posts/297322009/","title":"c++ map用法总结"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://xysn.ml/posts/3200579984/","path":"posts/3200579984/","title":"谢言射教你用hexo+github搭建博客（3.主题更换）"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>c++ map用法总结 | Seth's Blog</title>
+<title>谢言射教你用hexo+github搭建博客（3.主题更换） | Seth's Blog</title>
   
 
 
@@ -180,7 +183,7 @@ daovoice('update');
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%EF%BC%8Cmap%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">1，map简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%EF%BC%8Cmap%E7%9A%84%E5%8A%9F%E8%83%BD"><span class="nav-number">2.</span> <span class="nav-text">2，map的功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%EF%BC%8C%E4%BD%BF%E7%94%A8map"><span class="nav-number">3.</span> <span class="nav-text">3，使用map</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%EF%BC%8Cmap%E7%9A%84%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="nav-number">4.</span> <span class="nav-text">4，map的构造函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5%EF%BC%8C%E6%8F%92%E5%85%A5%E5%85%83%E7%B4%A0"><span class="nav-number">5.</span> <span class="nav-text">5，插入元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6%EF%BC%8C-%E6%9F%A5%E6%89%BE%E5%85%83%E7%B4%A0"><span class="nav-number">6.</span> <span class="nav-text">6， 查找元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7%EF%BC%8C-%E5%88%AA%E9%99%A4%E4%B8%8E%E6%B8%85%E7%A9%BA%E5%85%83%E7%B4%A0"><span class="nav-number">7.</span> <span class="nav-text">7， 刪除与清空元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8%EF%BC%8Cmap%E7%9A%84%E5%A4%A7%E5%B0%8F"><span class="nav-number">8.</span> <span class="nav-text">8，map的大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9%EF%BC%8Cmap%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E5%87%BD%E6%95%B0%EF%BC%9A"><span class="nav-number">9.</span> <span class="nav-text">9，map的基本操作函数：</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">更换主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%89%E6%8B%A9%E4%B8%BB%E9%A2%98"><span class="nav-number">2.1.</span> <span class="nav-text">选择主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98-1"><span class="nav-number">2.2.</span> <span class="nav-text">更换主题</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -320,7 +323,7 @@ daovoice('update');
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://xysn.ml/posts/297322009/">
+    <link itemprop="mainEntityOfPage" href="https://xysn.ml/posts/3200579984/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/picture.jpeg">
@@ -333,7 +336,7 @@ daovoice('update');
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          c++ map用法总结
+          谢言射教你用hexo+github搭建博客（3.主题更换）
         </h1>
 
         <div class="post-meta-container">
@@ -345,7 +348,7 @@ daovoice('update');
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2022-04-13 20:59:36 / 修改时间：21:00:52" itemprop="dateCreated datePublished" datetime="2022-04-13T20:59:36+08:00">2022-04-13</time>
+      <time title="创建时间：2022-05-02 18:23:57 / 修改时间：21:12:58" itemprop="dateCreated datePublished" datetime="2022-05-02T18:23:57+08:00">2022-05-02</time>
     </span>
 
   
@@ -357,8 +360,8 @@ daovoice('update');
     </span>
     <span class="post-meta-item-text">Valine：</span>
   
-    <a title="valine" href="/posts/297322009/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/297322009/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/3200579984/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/3200579984/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -369,14 +372,14 @@ daovoice('update');
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>3k</span>
+      <span>606</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>3 分钟</span>
+      <span>1 分钟</span>
     </span>
 </div>
 
@@ -389,86 +392,19 @@ daovoice('update');
     
     
     <div class="post-body" itemprop="articleBody">
-        <h3 id="1，map简介"><a href="#1，map简介" class="headerlink" title="1，map简介"></a>1，map简介</h3><p>map是STL的一个关联容器，它提供一对一的hash。</p>
-<span id="more"></span>
-
-<p>第一个可以称为关键字(key)，每个关键字只能在map中出现一次；<br>第二个可能称为该关键字的值(value)；</p>
-<p>map以模板(泛型)方式实现，可以存储任意类型的数据，包括使用者自定义的数据类型。Map主要用于资料一对一映射(one-to-one)的情況，map內部的实现自建一颗红黑树，这颗树具有对数据自动排序的功能。在map内部所有的数据都是有序的，后边我们会见识到有序的好处。比如一个班级中，每个学生的学号跟他的姓名就存在著一对一映射的关系。</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/ab94f358cc379299731b9aaa4814fd47.png"></p>
-<h3 id="2，map的功能"><a href="#2，map的功能" class="headerlink" title="2，map的功能"></a>2，map的功能</h3><p>自动建立key － value的对应。key 和 value可以是任意你需要的类型，包括自定义类型。</p>
-<h3 id="3，使用map"><a href="#3，使用map" class="headerlink" title="3，使用map"></a>3，使用map</h3><p>使用map得包含map类所在的头文件</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;map&gt;</span>  <span class="comment">//注意，STL头文件没有扩展名.h</span></span></span><br></pre></td></tr></table></figure>
-
-
-<p>map对象是模板类，需要关键字和存储对象两个模板参数：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">std:map&lt;<span class="type">int</span>, string&gt; personnel;</span><br></pre></td></tr></table></figure>
-
-
-<p>这样就定义了一个用int作为索引,并拥有相关联的指向string的指针.</p>
-<p>为了使用方便，可以对模板类进行一下类型定义，</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> map&lt;<span class="type">int</span>,CString&gt; UDT_MAP_INT_CSTRING;</span><br><span class="line"></span><br><span class="line">UDT_MAP_INT_CSTRING enumMap;</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="4，map的构造函数"><a href="#4，map的构造函数" class="headerlink" title="4，map的构造函数"></a>4，map的构造函数</h3><p>map共提供了6个构造函数，这块涉及到内存分配器这些东西，略过不表，在下面我们将接触到一些map的构造方法，这里要说下的就是，我们通常用如下方法构造一个map：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">map&lt;<span class="type">int</span>, string&gt; mapStudent;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="5，插入元素"><a href="#5，插入元素" class="headerlink" title="5，插入元素"></a>5，插入元素</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义一个map对象</span></span><br><span class="line">map&lt;<span class="type">int</span>, string&gt; mapStudent;</span><br><span class="line"> </span><br><span class="line"><span class="comment">// 第一种 用insert函數插入pair</span></span><br><span class="line">mapStudent.<span class="built_in">insert</span>(<span class="built_in">pair</span>&lt;<span class="type">int</span>, string&gt;(<span class="number">000</span>, <span class="string">&quot;student_zero&quot;</span>));</span><br><span class="line"> </span><br><span class="line"><span class="comment">// 第二种 用insert函数插入value_type数据</span></span><br><span class="line">mapStudent.<span class="built_in">insert</span>(map&lt;<span class="type">int</span>, string&gt;::<span class="built_in">value_type</span>(<span class="number">001</span>, <span class="string">&quot;student_one&quot;</span>));</span><br><span class="line"> </span><br><span class="line"><span class="comment">// 第三种 用&quot;array&quot;方式插入</span></span><br><span class="line">mapStudent[<span class="number">123</span>] = <span class="string">&quot;student_first&quot;</span>;</span><br><span class="line">mapStudent[<span class="number">456</span>] = <span class="string">&quot;student_second&quot;</span>;</span><br></pre></td></tr></table></figure>
-<p>以上三种用法，虽然都可以实现数据的插入，但是它们是有区别的，当然了第一种和第二种在效果上是完成一样的，用insert函数插入数据，在数据的 插入上涉及到集合的唯一性这个概念，即当map中有这个关键字时，insert操作是不能在插入数据的，但是用数组方式就不同了，它可以覆盖以前该关键字对 应的值，用程序说明如下：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mapStudent.<span class="built_in">insert</span>(map&lt;<span class="type">int</span>, string&gt;::<span class="built_in">value_type</span> (<span class="number">001</span>, <span class="string">&quot;student_one&quot;</span>));</span><br><span class="line"> </span><br><span class="line">mapStudent.<span class="built_in">insert</span>(map&lt;<span class="type">int</span>, string&gt;::<span class="built_in">value_type</span> (<span class="number">001</span>, <span class="string">&quot;student_two&quot;</span>));</span><br></pre></td></tr></table></figure>
-
-<p>上面这两条语句执行后，map中001这个关键字对应的值是“student_one”，第二条语句并没有生效，那么这就涉及到我们怎么知道insert语句是否插入成功的问题了，可以用pair来获得是否插入成功，程序如下</p>
-  <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 构造定义，返回一个pair对象</span></span><br><span class="line"><span class="function">pair&lt;iterator,<span class="type">bool</span>&gt; <span class="title">insert</span> <span class="params">(<span class="type">const</span> value_type&amp; val)</span></span>;</span><br><span class="line"> </span><br><span class="line">pair&lt;map&lt;<span class="type">int</span>, string&gt;::iterator, <span class="type">bool</span>&gt; Insert_Pair;</span><br><span class="line"> </span><br><span class="line">Insert_Pair = mapStudent.<span class="built_in">insert</span>(map&lt;<span class="type">int</span>, string&gt;::<span class="built_in">value_type</span> (<span class="number">001</span>, <span class="string">&quot;student_one&quot;</span>));</span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span>(!Insert_Pair.second)</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;&quot;</span>Error insert <span class="keyword">new</span> element<span class="string">&quot; &lt;&lt; endl;</span></span><br></pre></td></tr></table></figure>
-
-<p>我们通过pair的第二个变量来知道是否插入成功，它的第一个变量返回的是一个map的迭代器，如果插入成功的话Insert_Pair.second应该是true的，否则为false。</p>
-<h3 id="6，-查找元素"><a href="#6，-查找元素" class="headerlink" title="6， 查找元素"></a>6， 查找元素</h3><p>当所查找的关键key出现时，它返回数据所在对象的位置，如果沒有，返回iter与end函数的值相同。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// find 返回迭代器指向当前查找元素的位置否则返回map::end()位置</span></span><br><span class="line">iter = mapStudent.<span class="built_in">find</span>(<span class="string">&quot;123&quot;</span>);</span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span>(iter != mapStudent.<span class="built_in">end</span>())</span><br><span class="line">       cout&lt;&lt;<span class="string">&quot;Find, the value is&quot;</span>&lt;&lt;iter-&gt;second&lt;&lt;endl;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">   cout&lt;&lt;<span class="string">&quot;Do not Find&quot;</span>&lt;&lt;endl;</span><br></pre></td></tr></table></figure>
-
-<h3 id="7，-刪除与清空元素"><a href="#7，-刪除与清空元素" class="headerlink" title="7， 刪除与清空元素"></a>7， 刪除与清空元素</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//迭代器刪除</span></span><br><span class="line">iter = mapStudent.<span class="built_in">find</span>(<span class="string">&quot;123&quot;</span>);</span><br><span class="line">mapStudent.<span class="built_in">erase</span>(iter);</span><br><span class="line"> </span><br><span class="line"><span class="comment">//用关键字刪除</span></span><br><span class="line"><span class="type">int</span> n = mapStudent.<span class="built_in">erase</span>(<span class="string">&quot;123&quot;</span>); <span class="comment">//如果刪除了會返回1，否則返回0</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">//用迭代器范围刪除 : 把整个map清空</span></span><br><span class="line">mapStudent.<span class="built_in">erase</span>(mapStudent.<span class="built_in">begin</span>(), mapStudent.<span class="built_in">end</span>());</span><br><span class="line"><span class="comment">//等同于mapStudent.clear()</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="8，map的大小"><a href="#8，map的大小" class="headerlink" title="8，map的大小"></a>8，map的大小</h3><p>在往map里面插入了数据，我们怎么知道当前已经插入了多少数据呢，可以用size函数，用法如下：</p>
-  <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> nSize = mapStudent.<span class="built_in">size</span>();</span><br></pre></td></tr></table></figure>
-
-<h3 id="9，map的基本操作函数："><a href="#9，map的基本操作函数：" class="headerlink" title="9，map的基本操作函数："></a>9，map的基本操作函数：</h3><pre><code> C++ maps是一种关联式容器，包含“关键字/值”对
-
- begin()         返回指向map头部的迭代器
-
- clear(）        删除所有元素
-
- count()         返回指定元素出现的次数, (帮助评论区理解： 因为key值不会重复，所以只能是1 or 0)
-
- empty()         如果map为空则返回true
-
- end()           返回指向map末尾的迭代器
-
- equal_range()   返回特殊条目的迭代器对
-
- erase()         删除一个元素
-
- find()          查找一个元素
-
- get_allocator() 返回map的配置器
-
- insert()        插入元素
-
- key_comp()      返回比较元素key的函数
-
- lower_bound()   返回键值&gt;=给定元素的第一个位置
-
- max_size()      返回可以容纳的最大元素个数
-
- rbegin()        返回一个指向map尾部的逆向迭代器
-
- rend()          返回一个指向map头部的逆向迭代器
-
- size()          返回map中元素的个数
-
- swap()           交换两个map
-
- upper_bound()    返回键值&gt;给定元素的第一个位置
-
- value_comp()     返回比较元素value的函数
-</code></pre>
-
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>基于<a target="_blank" rel="noopener" href="https://xys-blog.cf/posts/3031762228/">第二章的准备工作</a>，现在更换博客主题</p>
+<h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><p>当然，您可以保留hexo的默认主题，也可以跟着本教程更换</p>
+<h3 id="选择主题"><a href="#选择主题" class="headerlink" title="选择主题"></a>选择主题</h3><p>到 <a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a> 中选择一款您喜欢的主题，并点击它的名字进入它的github地址<br><img src="https://cdn.jsdelivr.net/gh/xieyanshe666/PicGoCDN/img/3.1.png"></p>
+<h3 id="更换主题-1"><a href="#更换主题-1" class="headerlink" title="更换主题"></a>更换主题</h3><p>这里以butterfly主题为例<br>划到自述文件的开头<br>然后复制红框中的代码<br>在git中先打开博客（cd &#x2F;f&#x2F;myblog），然后把刚刚复制的东西黏贴到git中运行<br><img src="https://cdn.jsdelivr.net/gh/xieyanshe666/PicGoCDN/img/3.3.png"></p>
+<p>注：butterfly等主题还需在git中运行</p>
+<p>  npm install hexo-renderer-pug hexo-renderer-stylus<br>才行<br>接着更改博客根目录的_config.yml文件<br>把大约为第100行的theme配置改为</p>
+<p>  theme: 您刚刚更改的主题的名称<br>比如我的</p>
+<p>  theme: butterfly<br><img src="https://cdn.jsdelivr.net/gh/xieyanshe666/PicGoCDN/img/3.4.png"></p>
+<p>再在git中运行</p>
+<p>  hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>即可<br>等待一会，在浏览器中打开自己的博客，就能看见变化了<br><img src="https://cdn.jsdelivr.net/gh/xieyanshe666/PicGoCDN/img/3.5.png"></p>
+<p>博主有关hexo博客搭建的文章已经写完了<br>但后续会推出hexo博客美化系列的文章<br>敬请期待……</p>
+<p>感谢您的阅读！！！<br>（如有错请联系博主：<a href="mailto:&#120;&#121;&#x73;&#x77;&#x79;&#121;&#49;&#x40;&#49;&#54;&#51;&#x2e;&#x63;&#111;&#x6d;">&#120;&#121;&#x73;&#x77;&#x79;&#121;&#49;&#x40;&#49;&#54;&#51;&#x2e;&#x63;&#111;&#x6d;</a>或在评论区留言）</p>
+<center>---------END--------</center>
     </div>
 
     
@@ -478,10 +414,10 @@ daovoice('update');
   <div class="popular-posts-header">往期文章推荐</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="\posts\323266332\" rel="bookmark">4893 - 圆桌问题题解</a></div>
+      <div class="popular-posts-title"><a href="\posts\3031762228\" rel="bookmark">谢言射教你用hexo+github搭建博客（2.本地搭建和github部署）</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="\posts\1031250688\" rel="bookmark">4894 - 机器人走路题解</a></div>
+      <div class="popular-posts-title"><a href="\posts\4293843122\" rel="bookmark">谢言射教你用hexo+github搭建博客（1.准备工作）</a></div>
     </li>
   </ul>
 
@@ -507,7 +443,7 @@ daovoice('update');
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://xysn.ml/posts/297322009/" title="c++ map用法总结">https://xysn.ml/posts/297322009/</a>
+      <a href="https://xysn.ml/posts/3200579984/" title="谢言射教你用hexo+github搭建博客（3.主题更换）">https://xysn.ml/posts/3200579984/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -516,22 +452,19 @@ daovoice('update');
 </div>
 
           <div class="post-tags">
-              <a href="/tags/c/" rel="tag"><i class="fa fa-tag"></i> c++</a>
-              <a href="/tags/%E8%AF%AD%E6%B3%95/" rel="tag"><i class="fa fa-tag"></i> 语法</a>
+              <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+              <a href="/tags/github/" rel="tag"><i class="fa fa-tag"></i> github</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/posts/20400546/" rel="prev" title="学校游记4（未完待续……）">
-                  <i class="fa fa-chevron-left"></i> 学校游记4（未完待续……）
+                <a href="/posts/323266332/" rel="prev" title="4893 - 圆桌问题题解">
+                  <i class="fa fa-chevron-left"></i> 4893 - 圆桌问题题解
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/posts/3919692788/" rel="next" title="平凡（改编自朱自清的《匆匆》）">
-                  平凡（改编自朱自清的《匆匆》） <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -644,7 +577,7 @@ setInterval("createtime()",250);
 
 
 
-<script class="next-config" data-name="valine" type="application/json">{"enable":true,"appId":"eyfHRvcYIATvTSJhkXCKAHxN-MdYXbMMI","appKey":"0HL8w8Jmv61ivuPgUuUcMJ8k","serverURLs":"https://eyfhrvcy.api.lncldglobal.com","placeholder":"评论区……昵称，邮箱，网站都不填是佚名哦~（都是选填的）","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":false,"comment_count":true,"recordIP":false,"enableQQ":false,"requiredFields":[],"el":"#valine-comments","path":"/posts/297322009/"}</script>
+<script class="next-config" data-name="valine" type="application/json">{"enable":true,"appId":"eyfHRvcYIATvTSJhkXCKAHxN-MdYXbMMI","appKey":"0HL8w8Jmv61ivuPgUuUcMJ8k","serverURLs":"https://eyfhrvcy.api.lncldglobal.com","placeholder":"评论区……昵称，邮箱，网站都不填是佚名哦~（都是选填的）","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":false,"comment_count":true,"recordIP":false,"enableQQ":false,"requiredFields":[],"el":"#valine-comments","path":"/posts/3200579984/"}</script>
 <script>
 document.addEventListener('page:loaded', () => {
   NexT.utils.loadComments(CONFIG.valine.el)
