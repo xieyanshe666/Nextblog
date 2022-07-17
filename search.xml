@@ -2069,4 +2069,23 @@ C..C
         <tag>题解</tag>
       </tags>
   </entry>
+  <entry>
+    <title>分享几道关于绝对值的题</title>
+    <url>/posts/1998936257/</url>
+    <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>一、<br><img src="https://cdn.jsdelivr.net/gh/xieyanshe666/PicGoCDN/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220717151745.jpg"></p>
+<p>二、<br><img src="https://cdn.jsdelivr.net/gh/xieyanshe666/PicGoCDN/img/dea79233351d74689b5e0a3fe7e54e7.jpg"></p>
+<p><del>emmm……答案我已经帮你们涂掉了</del></p>
+<span id="more"></span>
+
+<h2 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h2><p>一、<br>（1）这个不用讲了吧<br>（2）这个我们只要去看a、b之间的距离即可，因为它们的距离比“1”短，所以答案为“＜”<br>（3）这里有3个取绝对值的符号，然后呢，第一个的取绝对值结果就是（c+b）（c为负数，b为正数，减一下结果是-（c+b），绝对值结果为（c+b）），第二个结果是（c+a-1），第三个结果是（a-1），然后连起来c+b-c-a+1+a-1消元，答案是b。<br>（4）<br>① 这个绝对值中如何得到最小的数？这是这道题的关键。用贪心思想，因为负数在绝对值中根本不起作用————会变成正数，所以，情况只有一种，其中一个绝对值的结果是0，先设x&#x3D;a，第一个绝对值的结果是0，第二个是a-b，再用上绝对值，答案就是b-a，设x&#x3D;b也可以得到同样的结果。</p>
+<p>② 和上题同理，前两个的结果我们已经有了，b-a，在加上一个x+1<br>因为设x&#x3D;a，（b也行，就是比较麻烦），结果为b-a+a+1，消元，答案是b+1。</p>
+<p>③ 和①同理，前两个结果是b-a，后面a肯定比c大，（就是说第三个绝对值是正数），结果是b-a+a-c，消元，答案是b-c。</p>
+<p>二、<br>这里我们分4种情况<br>1.a&gt;0,b&gt;0,c&lt;0 等于1+1-1&#x3D;1<br>2.a&gt;0,b&lt;0,c&gt;0 等于1-1+1&#x3D;1<br>3.a&lt;0,b&gt;0,c&gt;0 等于-1+1+1&#x3D;1<br>4.a&lt;0,b&lt;0,c&lt;0 等于-1-1-1&#x3D;-3<br>所以，答案为1或-3。</p>
+]]></content>
+      <tags>
+        <tag>题目分享</tag>
+        <tag>数学</tag>
+        <tag>绝对值</tag>
+      </tags>
+  </entry>
 </search>
